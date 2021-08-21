@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macbook Pro Configaretion</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,48 +29,49 @@
                 Keyboard - US English</p>
             <div class="memory">
                 <h4>Memory</h4>
-                <button>8GB unified memory</button>
-                <button>16GB unified memory</button>
+                <button id="memory-8gb" class="selected">8GB unified memory</button>
+                <button id="memory-16gb">16GB unified memory</button>
             </div>
             <div class="storage">
                 <h4>Storage</h4>
-                <button>256GB SSD storage</button>
-                <button>512GB SSD storage</button>
-                <button>1TB SSD storage</button>
+                <button id="ssd-256gb" class="selected">256GB SSD storage</button>
+                <button id="ssd-512gb">512GB SSD storage</button>
+                <button id="ssd-1tb">1TB SSD storage</button>
             </div>
             <div class="delivery-option">
                 <h4>Choose your delivery option</h4>
-                <button>Friday, Aug 25 FREE Prime Delivery</button>
-                <button>Friday, Aug 21 Delivery charge $20</button>
+                <button id="free-delivery" class="selected">Friday, Aug 25 FREE Prime Delivery</button>
+                <button id="paid-delivery">Friday, Aug 21 Delivery charge $20</button>
             </div>
             <div class="pricing-area">
                 <div class="best-price">
                     <h4>Best Price</h4>
-                    <h4>$<span>1299</span></h4>
+                    <h4>$<span id="best-price">1299</span></h4>
                 </div>
                 <div class="memory-cost">
                     <h4>Extra Memory Cost</h4>
-                    <h4>$<span>0</span></h4>
+                    <h4>$<span id="extra-memory-cost">0</span></h4>
                 </div>
                 <div class="storage-cost">
                     <h4>Extra Storage Cost</h4>
-                    <h4>$<span>0</span></h4>
+                    <h4>$<span id="extra-storage-cost">0</span></h4>
                 </div>
                 <div class="delivery-cost">
                     <h4>Delivery charge</h4>
-                    <h4>$<span>0</span></h4>
+                    <h4>$<span id="delivery-cost">0</span></h4>
                 </div>
                 <div class="total-price">
                     <h4>Total Price</h4>
-                    <h4>$<span>0</span></h4>
+                    <h4>$<span id="total-price">1299</span></h4>
                 </div>
             </div>
             <div class="promo-code">
                 <h4>Add Pomo code</h4>
                 <div class="promo-input">
-                    <input type="text">
-                    <button>Apply</button>
+                    <input type="text" placeholder="Enter your Promo Code" id="promo-code">
+                    <button id="apply-promo" class="selected">Apply</button>
                 </div>
+                <p id="promo-code-error"></p>
             </div>
         </section>
     </main>
@@ -72,7 +79,7 @@
     <footer>
         <hr>
         <h3 class="grand-total">
-            Total: $ <span>00</span>
+            Total: $<span id="grand-total">1299</span>
         </h3>
     </footer>
     <script src="app.js"></script>
